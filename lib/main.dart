@@ -45,31 +45,40 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          Row(
-            children: [
-              Column(
-                children: [
-                  Image.network(
-                      "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
-                  MyTitle("Text1")
-                ],
-              ),
-              Column(
-                children: [
-                  Image.network(
-                      "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
-                  MyTitle("Text1")
-                ],
-              ),
-              Column(
-                children: [
-                  Image.network(
-                      "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
-                  MyTitle("Text1")
-                ],
-              ),
-            ],
-          )
+          IntrinsicHeight(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Image.network(
+                          "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
+                      MyTitle("Text1")
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Image.network(
+                          "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
+                      MyTitle("Text1")
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Image.network(
+                          "https://images.unsplash.com/photo-1671540675967-7342577470d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"),
+                      MyTitle("Text1")
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
